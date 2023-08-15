@@ -1,0 +1,1 @@
+alias rf='rm -rf'
