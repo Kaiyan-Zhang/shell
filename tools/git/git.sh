@@ -24,14 +24,14 @@ g(){
         ("p") 
             echo "同步到远程"
             git add .
-            git reset eden.config.ts
+            git reset edenx.config.ts
             git commit
             git push --no-verify
             ;;
         ("m") 
             echo "commit中"
             git add .
-            git reset eden.config.ts
+            git reset edenx.config.ts
             git commit
             ;;
         ("b")
@@ -66,7 +66,7 @@ g(){
             ;;
         ("h")
             git add .
-            git reset eden.config.ts
+            git reset edenx.config.ts
             git commit -m "fix: hotfix"
             git push --set-upstream --no-verify origin hotfix
             git switch $(git remote show origin | sed -n '/HEAD branch/s/.*: //p')
