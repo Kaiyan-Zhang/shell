@@ -69,7 +69,7 @@ g(){
             git reset edenx.config.ts
             git commit -m "fix: hotfix"
             git push --set-upstream --no-verify origin hotfix
-            git switch $(git remote show origin | sed -n '/HEAD branch/s/.*: //p')
+            git switch release
             git branch -d hotfix
             ;;
         (*) which g ;;
