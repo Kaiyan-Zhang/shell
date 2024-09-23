@@ -25,6 +25,7 @@ g(){
             echo "同步到远程"
             git add .
             git reset edenx.config.ts
+            git reset packages/music_storm_fe/src/pages/Home/components/First/index.tsx
             git commit
             git push --no-verify
             ;;
@@ -32,6 +33,7 @@ g(){
             echo "commit中"
             git add .
             git reset edenx.config.ts
+            git reset packages/music_storm_fe/src/pages/Home/components/First/index.tsx
             git commit
             ;;
         ("b")
@@ -63,14 +65,6 @@ g(){
             echo "清除本地无效分支"
             git branch -vv | grep ': 丢失]' |  grep -v "\*" | awk '{ print $1; }' | xargs git branch -D
             git branch -vv | grep ': gone]' |  grep -v "\*" | awk '{ print $1; }' | xargs git branch -D
-            ;;
-        ("h")
-            git add .
-            git reset edenx.config.ts
-            git commit -m "fix: hotfix"
-            git push --set-upstream --no-verify origin hotfix
-            git switch release
-            git branch -d hotfix
             ;;
         (*) which g ;;
     esac
