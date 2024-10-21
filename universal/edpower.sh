@@ -1,0 +1,1 @@
+alias edpower='vi ${LinuxConfig}/power.txt'
