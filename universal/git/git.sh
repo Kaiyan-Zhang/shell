@@ -25,7 +25,6 @@ g(){
             echo "同步到远程"
             git add .
             git reset edenx.config.ts
-            git reset packages/music_storm_fe/src/pages/Home/components/First/index.tsx
             git commit
             git push --no-verify
             ;;
@@ -33,7 +32,6 @@ g(){
             echo "commit中"
             git add .
             git reset edenx.config.ts
-            git reset packages/music_storm_fe/src/pages/Home/components/First/index.tsx
             git commit
             ;;
         ("b")
