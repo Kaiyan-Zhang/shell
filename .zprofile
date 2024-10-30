@@ -4,11 +4,7 @@ echo 'Loading .zprofile'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # fnm
-FNM_PATH="/Users/bytedance/Library/Application Support/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/Users/bytedance/Library/Application Support/fnm:$PATH"
-  eval "`fnm env`"
-fi
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
