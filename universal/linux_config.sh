@@ -1,0 +1,1 @@
+export LinuxConfig="$HOME/Nutstore Files/LinuxConfig"

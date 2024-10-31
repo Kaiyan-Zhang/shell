@@ -1,3 +1,5 @@
+# 这里是一些软件安装之后要求添加到.zshrc到东西
+
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -10,11 +12,13 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 
+
+source ${0:A:h}/universal/main.sh
+source ${0:A:h}/fancy_zsh/main.sh
+
+
 alias copyLastCmd="fc -ln -1 | awk '{\$1=\$1}1' | pbcopy"
 alias update='brew upgrade; zplug update;'
 alias ip='ifconfig en0'
-source ${0:A:h}/zsh/main.sh
-export LinuxConfig="$HOME/Nutstore Files/LinuxConfig"
-alias edpower='vim "${LinuxConfig}/power.txt"'
 
 fnm use system

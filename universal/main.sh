@@ -10,4 +10,5 @@ source ${0:A:h}/git/main.sh
 source ${0:A:h}/vscode.sh
 source ${0:A:h}/myssh.sh
 source ${0:A:h}/edpower.sh
+source ${0:A:h}/linux_config.sh
 source ${0:A:h}/pho.sh
