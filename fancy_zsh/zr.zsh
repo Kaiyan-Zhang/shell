@@ -1,2 +1,2 @@
 # zr ohmyzsh/ohmyzsh/plugins/vi-mode
-echo 'Loading zr.sh...'
+echo 'Loading zr.zsh...'
