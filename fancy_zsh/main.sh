@@ -1,5 +1,5 @@
 source ${0:A:h}/zr.zsh
-source ${0:A:h}/zplug.sh
+# source ${0:A:h}/zplug.sh
 
 # MAC
 # brew install --cask font-meslo-lg-nerd-font
