@@ -1,3 +1,4 @@
+# source ${0:A:h}/zr.sh
 source ${0:A:h}/zplug.sh
 
 # MAC

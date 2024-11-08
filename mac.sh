@@ -11,6 +11,8 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
 
+# cargo
+export PATH=$PATH:$HOME/.cargo/bin
 
 source ${0:A:h}/universal/main.sh
 source ${0:A:h}/fancy_zsh/main.sh
