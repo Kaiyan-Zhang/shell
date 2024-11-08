@@ -1,6 +1,9 @@
 source ${0:A:h}/zr.zsh
 # source ${0:A:h}/zplug.sh
 
+# oh-my-posh
+# https://ohmyposh.dev/docs/themes
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/iterm2.omp.json)"
 
 # INSTALL FONT
 # brew install --cask font-meslo-lg-nerd-font
