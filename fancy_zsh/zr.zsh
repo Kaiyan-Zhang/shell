@@ -1,1 +1,1 @@
-. <(zr ohmyzsh/ohmyzsh.git/plugins/autojump/autojump.plugin.zsh ohmyzsh/ohmyzsh.git/plugins/vi-mode/vi-mode.plugin.zsh ohmyzsh/ohmyzsh.git/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh zsh-users/zsh-autosuggestions.git/zsh-autosuggestions.zsh)
+. <(zr romkatv/powerlevel10k.git/powerlevel10k.zsh-theme ohmyzsh/ohmyzsh.git/plugins/autojump/autojump.plugin.zsh ohmyzsh/ohmyzsh.git/plugins/vi-mode/vi-mode.plugin.zsh ohmyzsh/ohmyzsh.git/plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh zsh-users/zsh-autosuggestions.git/zsh-autosuggestions.zsh)
