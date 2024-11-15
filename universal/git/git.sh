@@ -24,14 +24,14 @@ g(){
         ("p") 
             echo "同步到远程"
             git add .
-            git reset edenx.config.ts
+            git reset .vscode/settings.json
             git commit
             git push --no-verify
             ;;
         ("m") 
             echo "commit中"
             git add .
-            git reset edenx.config.ts
+            git reset .vscode/settings.json
             git commit
             ;;
         ("b")
