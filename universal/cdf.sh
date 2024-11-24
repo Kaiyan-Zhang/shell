@@ -1,0 +1,1 @@
+cdf() { cd "$(osascript -e 'tell application "Finder" to POSIX path of (insertion location as alias)' 2>/dev/null)"; }
