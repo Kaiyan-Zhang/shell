@@ -1,5 +1,4 @@
 source ${0:A:h}/zr.zsh
-# source ${0:A:h}/zplug.sh
 
 # oh-my-posh
 # https://ohmyposh.dev/docs/themes

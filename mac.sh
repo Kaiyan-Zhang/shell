@@ -19,5 +19,5 @@ source ${0:A:h}/fancy_zsh/main.sh
 
 
 alias copyLastCmd="fc -ln -1 | awk '{\$1=\$1}1' | pbcopy"
-alias update='brew upgrade; zplug update;'
+alias update='brew upgrade;'
 alias ip='ifconfig en0'
