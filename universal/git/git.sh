@@ -1,4 +1,10 @@
 g(){
+    if [ $# -eq 0 ]; then
+        # $#表示参数的个数
+        # -eq 表示不等于
+        # 如果没有参数，则退出
+        return
+    fi
     case $1 in
         ("a")
             # echo "添加一个branch"
@@ -70,7 +76,9 @@ g(){
             git branch -vv | grep ': 丢失]' |  grep -v "\*" | awk '{ print $1; }' | xargs git branch -D
             git branch -vv | grep ': gone]' |  grep -v "\*" | awk '{ print $1; }' | xargs git branch -D
             ;;
-        (*) which g ;;
+        (*)
+            which g
+            ;;
     esac
 }
 
