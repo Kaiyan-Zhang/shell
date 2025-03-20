@@ -44,11 +44,8 @@ g(){
             # echo "所有分支"
             git branch # --all
             ;;
-        ("B")
-            git branch | sk | xargs git switch
-            g r
-            git fetch
-            # g b | sk | xargs g s # 这样写会报错
+        ("S")
+            git branch | sk | g s -
             ;;
         ("s")
             # echo "切换分支"
