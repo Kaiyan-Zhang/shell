@@ -45,7 +45,8 @@ g(){
             git branch # --all
             ;;
         ("S")
-            git branch | sk | g s -
+            # 利用fzf切换分支
+            git branch | fzf | xargs g s # TODO
             ;;
         ("s")
             # echo "切换分支"
