@@ -1,10 +1,4 @@
 g(){
-    if [ $# -eq 0 ]; then
-        # $#表示参数的个数
-        # -eq 表示不等于
-        # 如果没有参数，则退出
-        return
-    fi
     case $1 in
         ("a")
             # echo "添加一个branch"
@@ -30,33 +24,33 @@ g(){
         ("p") 
             # echo "同步到远程"
             git add .
-            git reset .vscode/settings.json
             git commit
-            git push --no-verify
+            git push
             ;;
         ("m") 
             # echo "commit中"
             git add .
-            git reset .vscode/settings.json
             git commit
             ;;
         ("b")
             # echo "所有分支"
             git branch # --all
             ;;
+        ("s")
+            # echo "切换分支"
+            if [ -z "$2" ]; then 
+                # 如果没有$2，则退出
+                # -z 表示字符串长度为0，即空串
+                return
+            fi
+            git switch $2 &&
+            g r &&
+            git fetch
+            ;;
         ("S")
             # fzf切换分支
             # sk是fzf的rust升级版
-            selected_branch=$(g b | sk)
-            if [ -n "$selected_branch" ]; then
-                g s "$selected_branch"
-            fi
-            ;;
-        ("s")
-            # echo "切换分支"
-            git switch $2
-            g r
-            git fetch
+            g s $(g b | sk)
             ;;
         ("f")
             # echo "强推到远程"
