@@ -46,7 +46,11 @@ g(){
             ;;
         ("S")
             # fzf切换分支
-            g s $(g b | sk)
+            # sk是fzf的rust升级版
+            selected_branch=$(g b | sk)
+            if [ -n "$selected_branch" ]; then
+                g s "$selected_branch"
+            fi
             ;;
         ("s")
             # echo "切换分支"
