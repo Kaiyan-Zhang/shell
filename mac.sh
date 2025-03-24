@@ -16,6 +16,7 @@ export PATH=$PATH:$HOME/.cargo/bin
 
 source ${0:A:h}/universal/main.sh
 source ${0:A:h}/fancy_zsh/main.sh
+source ${0:A:h}/music.sh
 
 
 alias copyLastCmd="fc -ln -1 | awk '{\$1=\$1}1' | pbcopy"
