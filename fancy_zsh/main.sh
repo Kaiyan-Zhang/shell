@@ -17,3 +17,5 @@ source ${0:A:h}/zr.zsh
   # search for: fontFace
 
 source ${0:A:h}/powerline.sh 
+
+source ${0:A:h}/yazi.sh 
