@@ -1,1 +1,0 @@
-alias edpower='vim ${LinuxConfig}/power.txt'
